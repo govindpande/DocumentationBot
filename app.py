@@ -20,8 +20,7 @@ def fetch_and_parse(url):
     meta_desc = soup.find("meta", attrs={"name": "description"})["content"] if soup.find("meta", attrs={"name": "description"}) else "No description found"
     return title, meta_desc
 
-# Initialize Langchain with OpenAI GPT
-openai_api_key = "your_openai_api_key_here"  # Replace with your actual OpenAI API key
+openai_api_key = os.getenv('OPENAI_API_KEY')  # Get the API key from the environment variable
 llm = OpenAI(api_key=openai_api_key)
 
 # Function to analyze text with Langchain and OpenAI GPT
