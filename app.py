@@ -31,7 +31,7 @@ llm = OpenAI(api_key=openai_api_key)
 # Function to analyze text with Langchain and OpenAI GPT
 def analyze_text_with_langchain(text, custom_prompt):
     response = llm.generate(prompts=[f"{custom_prompt}\n\n{text}"], max_tokens=100)
-    return response[0] if response else "No response"
+    return response if response else "No response"
 
 # Main analysis trigger
 if st.button('Analyze URL') and url:
