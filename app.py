@@ -2,6 +2,7 @@ import streamlit as st
 from langchain.llms import OpenAI
 from bs4 import BeautifulSoup
 import requests
+import os
 
 # Streamlit app title
 st.title('Web Content Analyzer')
