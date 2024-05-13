@@ -5,7 +5,7 @@ import requests
 import os
 
 # Streamlit app title
-st.title('Web Content Analyzer')
+st.title('Welcome to DocumentationBot!!!')
 
 # Streamlit input for URL
 url = st.text_input('Enter the URL:', '')
