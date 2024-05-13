@@ -47,3 +47,8 @@ if st.button('Analyze URL') and url:
         st.write("Semantic Summary:", semantic_summary)
     else:
         st.write("Failed to retrieve or parse content from the URL.")
+
+
+st.markdown('-----------------------------------------------------')
+st.text('Developed by Govind Pande & Ja-Yuan Pendley - 12-12 2022')
+
