@@ -50,5 +50,5 @@ if st.button('Analyze URL') and url:
 
 
 st.markdown('-----------------------------------------------------')
-st.text('Developed by Govind Pande 2024')
+st.text('Developed by Govind Pande 2023')
 
